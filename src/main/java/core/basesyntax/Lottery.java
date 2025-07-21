@@ -9,6 +9,6 @@ public class Lottery {
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor();
         double randomNumber = random.nextDouble(101);
-        return new Ball(color, randomNumber);
+        return new Ball(color, (byte) randomNumber);
     }
 }
